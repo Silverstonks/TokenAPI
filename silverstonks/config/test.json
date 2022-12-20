@@ -1,0 +1,28 @@
+[{
+    "verified": true,
+    "walletAuthorized": true,
+    "email": "teresa1594@gmail.com",
+    "createdAt": "2021-09-16T01:11:25.652Z",
+    "__v": 0,
+    "verificationCode": "zJvPA",
+    "totalStaked": 750002582.3838809,
+    "walletAddress": "0x5c9ba9a00d9912449462c3ed2b6bd3418a3dd5d2"
+}, {
+    "verified": true,
+    "walletAuthorized": true,
+    "email": "jdejesus001@gmail.com",
+    "createdAt": "2021-09-17T01:34:52.950Z",
+    "__v": 0,
+    "verificationCode": "23qm7",
+    "totalStaked": 750000364.709249,
+    "walletAddress": "0x5c9ba9a00d9912449462c3ed2b6bd3418a3dd5d2"
+}, {
+    "verified": true,
+    "walletAuthorized": true,
+    "email": "ishtiaqbhatti455@gmail.com",
+    "createdAt": "2021-09-10T13:54:31.288Z",
+    "__v": 0,
+    "verificationCode": "76Gtv",
+    "totalStaked": 0,
+    "walletAddress": "0x400cda992c56cab8f81c9a5bba90bd044c456356"
+}]

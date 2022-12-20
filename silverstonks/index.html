@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Silver Stonks</title>
+
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+        <!--BOOTSRAP-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+
+
+
+
+
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- SWIPER SLIDER -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js" integrity="sha512-r1+wZ6Dt2YNg8FujUHBbiXmDRNcVLTcN2q+lm0TSbmoBNUFJ4FdQ3zLeShz0bllBlzQ0QWtZuzJgdrW9xGc2Dw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.css" integrity="sha512-k/ajQk10gq0MXEJ3gDVRQe4ZkmXDsGGDa4D5PWCQDH1drJmipCfhZHjj+WsXqyEs0dlo1gJmaPbviTb8yLC5hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- AOS ANIMATE -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- CUSTOM SCRIPT -->
+        <script src="js/custom-script.js"></script>
+
+        <!-- MAIN STYLE -->
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+
+    <body data-repo="github">
+        <header class="site-header bg-color-dark py-3">
+            <div class="container-xl">
+                <div class="nav-container">
+                    <div class="nav-brand">
+                        <a href="index.html">
+                            <img src="assets/img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item pt-3 d-flex d-md-none justify-content-end">
+                            <button class="btn btn-clear" id="menu-toggle">
+                                <i class="fas fa-times txt-color-white"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="why.html" class="nav-link">WHY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="token-sstx.html" class="nav-link">TOKEN SSTX</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">SHOP</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="membership.html" class="nav-link">MEMBERSHIPS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Learn
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="learn-silver-stonks-academy.html">Academy</a>
+                                <a class="dropdown-item" href="learn-faq.html">FAQ's</a>
+                                <a class="dropdown-item" href="learn-user-guide.html">User Guides</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.flooz.trade/embedded/0x5396734569e26101677eb39c89413f7fa7d8006f/?refId=jegOR0" class="btn btn-outline-bgalpha mb-3 mb-md-0" target="_blank">
+                                BUY SSTX
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-bgalpha" href="https://stake.silverstonksstaking.com/">
+                                STAKE NOW
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-clear px-0 d-block d-md-none" id="menu-toggle">
+                        <i class="fas fa-bars txt-color-mint"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </body>
+
+    <main class="overflow-hidden">
+        <!-- HERO BANNER -->
+        <section class="hero-container" style="overflow: hidden;">
+            <div id="particles-js">
+
+            </div>
+            <div class="hero-banner container-xl h-100" >
+                <div class="row h-100">
+                    <div class="col-12 h-100 d-flex align-items-center">
+                        <div class="w-100">
+                            <div class="d-flex hero-logo align-items-center justify-content-center justify-content-md-start" data-aos="fade-up" data-aos-delay="1600" data-aos-duration="500">
+                                <div>
+                                    <img src="assets/img/logo-2.svg" alt="" class="mb-4 " >
+                                </div>
+                                <div>
+                                    <h1 class="hero-tagline fw-700 txt-color-white text-center text-md-left text-uppercase txt-logo">Silver<br>Stonks</h1>
+                                </div>
+                            </div>
+
+                            <h2 class="hero-tagline fw-700 txt-color-white text-center text-md-left" data-aos="fade-up" data-aos-duration="500">
+                                The Best Way to Buy Silver
+                            </h2>
+
+                            <span class="txt-color-white fs-18 mt-4 d-table text-center text-md-left w-100" data-aos="fade-down" data-aos-delay="800" data-aos-duration="500">
+                                Diversify Into Digital and Hard Assets
+                            </span>
+
+                            <div class="w-100 mt-5 pt-4 d-flex justify-content-center justify-content-md-start" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="700">
+                                <a class="btn btn-solid-mint mr-2" href="#learnMore">
+                                    LEARN MORE
+                                </a>
+                                <a class="btn btn-outline-bgalpha" href="getting-started.html">
+                                    GET STARTED
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/home-banner-img.png" alt="" class="hero-banner-img w-100" data-aos-delay="500" data-aos="fade" data-aos-duration="1000">
+        </section>
+
+        <!-- Introducing SilverStonks START-->
+        <div class="edge-round-bg d-none d-lg-block " id="learnMore">
+            <img src="assets/img/monkey-edge.svg" data-aos="fade-down" data-aos-delay="200" data-aos-offset="50" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-back" />
+        </div>
+        <section class="container-fluid py-2" >
+
+
+            <div class="container-xl py-5" >
+                <div class="row mb-3">
+                    <div class="col-12  text-left text-lg-right">
+                        <img src="assets/img/icon-arrow-down.svg" data-aos="fade-down" data-aos-delay="100" data-aos-offset="50" data-aos-duration="1000" />
+                        <h2 class="txt-color-dark mb-4" data-aos="fade-right" data-aos-delay="100" data-aos-offset="50" data-aos-duration="1000">
+                            Introducing <span class="txt-logo">Silver Stonks</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row align-items-center justify-content-center mb-3">
+                    <div class="col-12 col-md-8" data-aos="flip-up" data-aos-delay="100" data-aos-offset="50" data-aos-duration="1000">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LOUSoCaPoqk" allowfullscreen></iframe>
+                          </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+        <!-- Introducing SilverStonks END -->
+
+        <!-- What is SilverStonks START-->
+        <section class="container-fluid what-is" style="background-color: #f9f9f9;">
+            <div class="container-xl ">
+                <div class="row mt-5" >
+
+
+                    <div class="col-md-6 d-flex align-items-center order-lg-1 ">
+                        <div class="w-100 d-flex" >
+                            <div class="mr-3 mt-2">
+                                <img src="assets/img/icon-arrow-right.svg" data-aos="fade-right" data-aos-delay="300" data-aos-offset="50" data-aos-duration="1000" />
+                            </div>
+                            <div>
+                                <h3 class="txt-color-mint mb-4 fw-500" data-aos="fade-right" data-aos-delay="100" data-aos-offset="50" data-aos-duration="1000">
+                                    What is Silver Stonks?
+                                </h3>
+
+                                <p class="fs-16" data-aos="fade-down"  data-aos-delay="600" data-aos-offset="50" data-aos-duration="800">
+                                    At Silver Stonks, we are making it easier for a wider demographic to diversify their portfolio into digital and hard assets through our token SSTX. Token holders can use SSTX to buy physical silver on our e-commerce store and become a member to earn more benefits.
+                                    <br>
+                                    <br>
+                                    Silver Stonks is leading the way to encourage the average investor to protect and diversify their assets through our upcoming marketplace. Token holders will be able to use SSTX as a form of payment to buy from other bullion dealers as well as other hard assets.
+                                    <br><br>
+                                    For more information about our SSTX token, read our complete guide on <strong><a href="getting-started.html" class="txt-color-black">Getting Started</a></strong>
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5 mb-md-0 order-lg-2 ">
+                        <img src="assets/img/img-01.svg" alt="" class="w-100 img-fluid px-5 main-img" data-aos="fade-right" data-aos-offset="50" data-aos-duration="800">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <div class="py-5" >
+
+        </div>
+
+        <!-- What is SilverStonks END -->
+
+        <!-- Why SilverStonks? START -->
+        <section class="container-fluid py-5 position-relative">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12" data-aos="fade"  data-aos-delay="100" data-aos-offset="50" data-aos-duration="1200">
+                        <h2 class="text-center mb-5">
+                            Why Silver Stonks?
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3"  data-aos="flip-right"  data-aos-delay="500" data-aos-offset="50" data-aos-duration="1200">
+                        <img src="assets/img/icon-01.svg" alt="" class="d-table mb-4">
+                        <span class=" fs-16 fw-600 d-table mb-2">
+                            Best Hedge Against Inflation
+                        </span>
+
+                        <p class="fs-16">
+                            We are focused specifically on silver as a hedge against inflation because of its accessibility and vast utility worldwide. Growing demand and limited supply make buying physical silver a great strategy for every portfolio.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 mb-3" data-aos="flip-right"  data-aos-delay="700" data-aos-offset="50" data-aos-duration="1200">
+                        <img src="assets/img/icon-02.svg" alt="" class="d-table mb-4">
+                        <span class="fs-16 fw-600 d-table mb-2">
+                            Buy Silver Using Our Token
+                        </span>
+
+                        <p class="fs-16">
+                            Being a member of Silver Stonks allows you to purchase physical silver by using SSTX, merging the new, exciting era of crypto with the traditional store of value the silver market brings.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 mb-3" data-aos="flip-right"  data-aos-delay="900" data-aos-offset="50" data-aos-duration="1200">
+                        <img src="assets/img/icon-03.svg" alt="" class="d-table mb-4">
+                        <span class="fs-16 fw-600 d-table mb-2">
+                            Bullion Dealer Partnerships
+                        </span>
+
+                        <p class="fs-16">
+                            We will make strategic partnerships with other precious metal distributors so that they can accept SSTX as a form of payment, in order to facilitate silver purchases around the world, as well as other hard assets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12" data-aos="fade-right"  data-aos-delay="800" data-aos-offset="50" data-aos-duration="1200">
+                        <a href="why.html" class="btn txt-color-mint mb-5 fs-16 d-flex align-items-center text-center justify-content-center">LEARN MORE <i class=" ml-2 fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Why SilverStonks? END -->
+        <div class="py-5 dark-divide d-none d-lg-block" >
+
+        </div>
+        <!-- About Silver Stonks START -->
+        <section class="container-fluid py-5 forest-bg">
+            <div class="container-xl py-5">
+                <div class="row">
+                    <div class="col align-items-center d-flex">
+                        <div class="w-100 py-5">
+                            <h1 class="txt-color-dark mt-4 mt-md-0 mb-4 text-center" data-aos="fade-up"  data-aos-delay="300" data-aos-offset="50" data-aos-duration="500">
+                                About Silver Stonks
+                            </h1>
+
+                            <a href="about.html" class="btn btn-outline-cta d-table mx-auto "  data-aos="fade-down"  data-aos-delay="800" data-aos-offset="50" data-aos-duration="400">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Silver Stonks END -->
+
+        <!-- Silver Stonks Academy START -->
+        <section class="container-xl py-5 mb-5">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="txt-color-mint" data-aos="fade-right"  data-aos-delay="500" data-aos-offset="50" data-aos-duration="300">
+                        <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> Silver Stonks Academy
+                    </h2>
+                    
+                </div>
+            </div>
+
+            <div class="row"  data-aos="fade-up"  data-aos-delay="1200" data-aos-offset="100" data-aos-duration="1000">
+                <div class="col-12">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper pb-5">
+
+                            <!-- ITEM -->
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="blog-thumb mb-3" style="background-image: url(assets/img/blog/understand-the-difference-between-coins-vs-tokens.png);">
+                                        
+                                    </div>
+
+                                    <h3 class="fs-24 fw-400 txt-color-dark blog-header" title="Understand the Difference Between Coins vs Tokens"> 
+                                        Understand the Difference Between Coins vs Tokens
+                                    </h3>
+
+                                    <div class="w-100 mb-3 d-flex justify-content-between">
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            Crypto
+                                        </span>
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            31 Aug 2021
+                                        </span>
+                                    </div>
+                                    <div class="fs-16 txt-color-dark blog-teaser">
+                                        <p class="txt-color-dark">The words “coin” and “token” are often used interchangeably. However, they refer to two completely different concepts. So what’s the difference between the two?</p><a href="https://medium.com/@silverstonksteam/understand-the-difference-between-coins-vs-tokens-846c978793c0" target="_blank" class="txt-color-mint">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="blog-thumb mb-3" style="background-image: url(assets/img/blog/four-reasons-to-buy-physical-silver.png);">
+                                        
+                                    </div>
+
+                                    <h3 class="fs-24 fw-400 txt-color-dark blog-header" title="Four Reasons to Buy Physical Silver">
+                                        Four Reasons to Buy Physical Silver
+                                    </h3>
+
+                                    <div class="w-100 mb-3 d-flex justify-content-between">
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            Silver
+                                        </span>
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            31 Aug 2021
+                                        </span>
+                                    </div>
+                                    <div class="fs-16 txt-color-dark blog-teaser">
+                                        <p class="txt-color-dark">In this article we’ll go over four simple reasons as to why you should be interested in buying physical silver:</p><a href="https://medium.com/@silverstonksteam/four-reasons-to-buy-physical-silver-2a3a3dd6444d" target="_blank" class="txt-color-mint">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="blog-thumb mb-3" style="background-image: url(assets/img/blog/whats-the-difference-between.png);">
+                                        
+                                    </div>
+
+                                    <h3 class="fs-24 fw-400 txt-color-dark blog-header" title="What's the Difference Between Binance Smart Chain and Ethereum?">
+                                        What's the Difference Between Binance Smart Chain and Ethereum?
+                                    </h3>
+
+                                    <div class="w-100 mb-3 d-flex justify-content-between">
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            Silver
+                                        </span>
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            31 Aug 2021
+                                        </span>
+                                    </div>
+                                    <div class="fs-16 txt-color-dark blog-teaser">
+                                        <p class="txt-color-dark">Binance Smart Chain (BSC) is a hard fork of the Go Ethereum (Geth) protocol, and as such, it has a lot in common with the Ethereum blockchain. In several key aspects though, BSC developers have made major modifications. BSC's consensus mechanism is the most significant development, since it enables cheaper and quicker transactions.</p><a href="https://medium.com/@silverstonksteam/whats-the-difference-between-binance-smart-chain-and-ethereum-3e09d7d5d909" target="_blank" class="txt-color-mint">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="blog-thumb mb-3" style="background-image: url(assets/img/blog/the-best-way-to-buy-silver.png);">
+                                        
+                                    </div>
+
+                                    <h3 class="fs-24 fw-400 txt-color-dark blog-header" title="The Best Way to Buy Silver">
+                                        The Best Way to Buy Silver
+                                    </h3>
+
+                                    <div class="w-100 mb-3 d-flex justify-content-between">
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            Silver
+                                        </span>
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            31 Aug 2021
+                                        </span>
+                                    </div>
+                                    <div class="fs-16 txt-color-dark blog-teaser">
+                                        <p class="txt-color-dark">Many consumers wonder, “What is the best way to invest in silver?” “How can I buy silver at the cheapest price?” Both of these questions are common questions when you first start considering buying silver. </p><a href="https://medium.com/@silverstonksteam/the-best-way-to-buy-silver-264d913989e4" target="_blank" class="txt-color-mint">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="blog-thumb mb-3" style="background-image: url(assets/img/blog/the-bitcoin-blockchain.png);">
+                                        
+                                    </div>
+
+                                    <h3 class="fs-24 fw-400 txt-color-dark blog-header" title="The Bitcoin-Blockchain Relationship Explained for Newbies In A Nutshell">
+                                        The Bitcoin-Blockchain Relationship Explained for Newbies In A Nutshell
+                                    </h3>
+
+                                    <div class="w-100 mb-3 d-flex justify-content-between">
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            Blockchain & Cryptocurrency
+                                        </span>
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            30 Aug 2021
+                                        </span>
+                                    </div>
+                                    <div class="fs-16 txt-color-dark blog-teaser">
+                                        <p class="txt-color-dark">In a nutshell: To understand what Blockchain is, think of a traditional accounting book, or ledger, where records of transactions are kept and assets are tracked. However, the difference with Blockchain’s ledger is that it is shared and available to all parties. This is revolutionary, because it provides tighter security and will save time and costs.</p><a href="https://medium.com/@silverstonksteam/the-bitcoin-blockchain-relationship-explained-for-newbies-in-a-nutshell-b7ddb430dad4" target="_blank" class="txt-color-mint">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="blog-thumb mb-3" style="background-image: url(assets/img/blog/a-brief-Intro-to.jpg);">
+                                        
+                                    </div>
+
+                                    <h3 class="fs-24 fw-400 txt-color-dark blog-header" title="A Brief Intro to How the Economy Works">
+                                        A Brief Intro to How the Economy Works
+                                    </h3>
+
+                                    <div class="w-100 mb-3 d-flex justify-content-between">
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            Finance & Economics
+                                        </span>
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            30 Aug 2021
+                                        </span>
+                                    </div>
+                                    <div class="fs-16 txt-color-dark blog-teaser">
+                                        <p class="txt-color-dark">The economy can be compared to a living, breathing organism. When something goes wrong, it is “sick” and when it is healthy, its vital signs are what make the world go around. Economics, whether we realize it or not, impacts our daily lives. Understanding its concepts are critical to making sound, financial decisions.  
+                                        </p><a href="https://medium.com/@silverstonksteam/a-brief-intro-to-how-the-economy-works-48d5c864e1a1" target="_blank" class="txt-color-mint">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="blog-thumb mb-3" style="background-image: url(assets/img/blog/bid-ask-spread.png);">
+                                        
+                                    </div>
+
+                                    <h3 class="fs-24 fw-400 txt-color-dark blog-header" title="Bid-Ask Spread and Slippage Explained">
+                                        Bid-Ask Spread and Slippage Explained
+                                    </h3>
+
+                                    <div class="w-100 mb-3 d-flex justify-content-between">
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            Blockchain & Cryptocurrency
+                                        </span>
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            31 Aug 2021
+                                        </span>
+                                    </div>
+                                    <div class="fs-16 txt-color-dark blog-teaser">
+                                        <p class="txt-color-dark">The gap between the lowest price demanded for an asset and the highest price bid is known as the bid-ask spread. Assets with more liquidity and trading volume, such as Bitcoin, have a smaller spread than assets with less liquidity and trading volume.
+                                        </p><a href="https://medium.com/@silverstonksteam/bid-ask-spread-and-slippage-explained-4ac0e5f445b4" target="_blank" class="txt-color-mint">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ITEM -->
+                            <div class="swiper-slide">
+                                <div class="w-100">
+                                    <div class="blog-thumb mb-3" style="background-image: url(assets/img/blog/when-will-a-gold.png);">
+                                        
+                                    </div>
+
+                                    <h3 class="fs-24 fw-400 txt-color-dark blog-header" title="When will a Gold & Silver Bullion Shortage Arise?">
+                                        When will a Gold & Silver Bullion Shortage Arise?
+                                    </h3>
+
+                                    <div class="w-100 mb-3 d-flex justify-content-between">
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            Silver
+                                        </span>
+                                        <span class="fs-14 fw-400 txt-color-gray">
+                                            15 Sept 2021
+                                        </span>
+                                    </div>
+                                    <div class="fs-16 txt-color-dark blog-teaser">
+                                        <p class="txt-color-dark">We need first to know what are the meaning of these two terms: gold bullion shortage and silver shortage on bullion supply.                                            
+                                        </p><a href="https://medium.com/@silverstonksteam/when-will-a-gold-silver-bullion-shortage-arise-ff1c89f55af3" target="_blank" class="txt-color-mint">LEARN MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination pt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SSilver Stonks Academy END -->
+
+        <!-- Earn up to 12% APY in Crypto! START -->
+        <section class="container-fluid bg-color-dark position-relative middle-image">
+            <div class="row justify-content-center mx-3 mx-lg-0 align-items-center">
+                <div class="col-md-3 align-items-center">
+                    <img src="assets/img/silverback-id.svg" alt="" class="w-100 img-fluid pr-4 d-none d-md-block">
+                </div>
+                <div class="col-md-5 pt-0 pt-mb-5 pb-5 d-flex align-items-center">
+                    <div class="w-100">
+                        <h3 class="txt-color-mint fw-600 mb-3 mt-5" data-aos="fade-up"  data-aos-delay="500" data-aos-offset="50" data-aos-duration="1000">
+                            Earn up to 12% APY in Crypto!
+                        </h3>
+                        <p class="txt-color-white fs-16" data-aos="fade-up"  data-aos-delay="1000" data-aos-offset="50" data-aos-duration="800">
+                            Stake your SSTX and earn up to 12% APY by becoming a member and entering our silver jungle. You'll have the opportunity to become a Silverback and earn more SSTX tokens.
+                        </p>
+
+                        <a class="btn btn-outline-bgalpha mt-4"  data-aos="fade-up" data-aos-delay="1200" data-aos-offset="50" data-aos-duration="800" href="https://stake.silverstonksstaking.com">STAKE NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Earn up to 12% APY in Crypto! END -->
+
+        <!-- Frequently Asked Questions START -->
+        <section class="container-fluid pt-5 faq-bg">
+            <div class="container-xl pb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-5 ">
+                        <img src="assets/img/user-guide.svg" alt="" class="img-fluid w-100 d-none d-md-block pr-5">
+                    </div>
+
+                    <div class="col-md-7">
+                        <h3 class="txt-color-mint fw-600 mb-4"  data-aos="fade-up"  data-aos-delay="300" data-aos-offset="50" data-aos-duration="600">
+                            Frequently Asked Questions
+                        </h3>
+                        <p class="fs-16 txt-color-dark-2"  data-aos="fade-up"  data-aos-delay="800" data-aos-offset="50" data-aos-duration="400">
+                            Check out our FAQs to learn more about Silver Stonks.
+                        </p>
+
+                        <div class="accordion mt-5"  data-aos="fade-down"  data-aos-delay="1000" data-aos-offset="100" data-aos-duration="300">
+
+                            <!-- ITEM -->
+                            <div class="accordion-item py-3 border-y-mint-1 px-3">
+                                <a href="javascript:void(0)" class="btn-solid-accordion d-flex justify-content-between fs-16 txt-color-dark align-items-center" data-toggle="collapse" data-target="#faq-1">
+                                    <span class="fw-600">
+                                        What is Silver Stonks?
+                                    </span>
+
+                                    <i class="fas fa-plus txt-color-mint"></i>
+                                </a>
+
+                                <div class="accordion-content txt-color-dark-2 collapse mt-3" id="faq-1">
+
+                                    <p class="fs-14 mb-0">
+                                        Silver Stonks is a company powered by its own token, SSTX, created to make it easier for a wider demographic to protect and diversify their assets. Silver Stonks is creating an ecosystem where SSTX can be used as a way to diversify into digital and hard assets. This includes our ecommerce store, where users will be able to use SSTX to purchase silver products. We will expand adoption for our token through strategic partnerships with bullion dealers, our NFT marketplace tied to hard assets and other features as we grow. Refer to our whitepaper for more details.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ITEM -->
+                            <div class="accordion-item py-3 border-bottom-mint-1 px-3">
+                                <a href="javascript:void(0)" class="btn-solid-accordion d-flex justify-content-between fs-16 txt-color-dark align-items-center" data-toggle="collapse" data-target="#faq-2">
+                                    <span class="fw-600">
+                                        How did the project start?
+                                    </span>
+
+                                    <i class="fas fa-plus txt-color-mint"></i>
+                                </a>
+
+                                <div class="accordion-content txt-color-dark-2 collapse mt-3" id="faq-2">
+                                    <p class="fs-14 mb-0">
+                                        Inspired by the growing Silver Short Squeeze movement, Silver Stonks was created to encourage everyone to diversify their assets in precious metals, specifically silver, because of its utility and price accessibility. The silver market is greatly undervalued, making it a great hedge against price inflation. We created Silver Stonks to make buying silver approachable to a wider demographic by creating our token, SSTX. Silver Stonks sells physical .999 silver bars and rounds that are customizable, as well as other unique products. Holders will be able to use our token, SSTX to purchase silver directly on our e-commerce store without having to convert the token into fiat currency.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ITEM -->
+                            <div class="accordion-item py-3 border-bottom-mint-1 px-3">
+                                <a href="javascript:void(0)" class="btn-solid-accordion d-flex justify-content-between fs-16 txt-color-dark align-items-center" data-toggle="collapse" data-target="#faq-3">
+                                    <span class="fw-600">
+                                        Where can I buy Silver Stonks?
+                                    </span>
+
+                                    <i class="fas fa-plus txt-color-mint"></i>
+                                </a>
+
+                                <div class="accordion-content txt-color-dark-2 collapse mt-3" id="faq-3">
+                                    <p class="fs-14 mb-0">
+                                        Silver Stonks can be purchased directly in our website or in Pancakeswap. The token is paired with BNB (Smart Chain). As we expand to other exchanges, Silver Stonks will become more accessible, on different exchanges and in different pairs.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ITEM -->
+                            <div class="accordion-item py-3 border-bottom-mint-1 px-3">
+                                <a href="javascript:void(0)" class="btn-solid-accordion d-flex justify-content-between fs-16 txt-color-dark align-items-center" data-toggle="collapse" data-target="#faq-4">
+                                    <span class="fw-600">
+                                        What are reflections?
+                                    </span>
+
+                                    <i class="fas fa-plus txt-color-mint"></i>
+                                </a>
+
+                                <div class="accordion-content txt-color-dark-2 collapse mt-3" id="faq-4">
+                                    <p class="fs-14 mb-0">
+                                        Receiving reflections is like receiving interest. SSTX token holders are rewarded for holding their tokens in their wallet. This is part of the transaction fee that is redistributed for every transaction made. You must hold Silver Stonks in a defi wallet to be eligible for reflections.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ITEM -->
+                            <div class="accordion-item py-3 border-bottom-mint-1 px-3">
+                                <a href="javascript:void(0)" class="btn-solid-accordion d-flex justify-content-between fs-16 txt-color-dark align-items-center" data-toggle="collapse" data-target="#faq-5">
+                                    <span class="fw-600">
+                                        Which wallet should I use?
+                                    </span>
+
+                                    <i class="fas fa-plus txt-color-mint"></i>
+                                </a>
+
+                                <div class="accordion-content txt-color-dark-2 collapse mt-3" id="faq-5">
+                                    <p class="fs-14 mb-0">
+                                        You can use any defi wallet that accepts Smart Chain. Wallets like Metamask or Trust Wallet will store your Silver Stonks tokens (SSTX). Make sure that you add the token’s information correctly and that you are on the Smart Chain network. Never share your private keys with anyone.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex align-items-end justify-content-end">
+                    <img src="assets/img/monkey-02.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Frequently Asked Questions END -->
+
+        <!-- Silver Stonks. The Best Way to Buy Silver. START -->
+        <section class="container-fluid best-way-bg py-5">
+            <div class="container-xl py-5">
+                <div class="row py-3">
+                    <div class="col-12 py-0 py-lg-5">
+                        <h2 class="txt-color-white text-center">
+                            Silver Stonks. Diversify Into Digital and Hard Assets.
+                        </h2>
+
+                        <a class="btn btn-outline-bgalpha mt-4 d-table mx-auto" href="getting-started.html">GET STARTED</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Silver Stonks. The Best Way to Buy Silver. END -->
+    </main>
+
+    <footer>
+        <div class="container-fluid py-5 ">
+            <div class="container-xl">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <p class="fs-16 txt-color-dark-2">
+                            <i class="fas fa-flag mr-4"></i>
+                            US English
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-xl-7">
+                        <div class="row">
+                            <div class="col mb-md-0 mb-5 text-nowrap">
+                                <span class="fs-16 fw-700 txt-color-mint text-uppercase d-table mb-3">
+                                    INFO
+                                </span>
+
+                                <p class="fs-16">
+                                    SILVER STONKS, INC
+                                </p>
+
+                                <p class="fs-16">
+                                    hello@silverstonks.io
+                                </p>
+                            </div>
+
+                            <div class="col mb-md-0 mb-5">
+                                <span class="fs-16 fw-700 txt-color-mint text-uppercase d-table mb-3">
+                                    COMPANY
+                                </span>
+
+                                <a href="about.html" class="fs-16 mb-3 d-table">About</a>
+                                <a href="why.html" class="fs-16 mb-3 d-table">Why</a>
+                                <a href="social.html" class="fs-16 mb-3 d-table">Social</a>
+                                <a href="contact-us.html" class="fs-16 mb-3 d-table">Contact Us</a>
+                            </div>
+                            <div class="col mb-md-0 mb-5">
+                                <span class="fs-16 fw-700 txt-color-mint text-uppercase d-table mb-3">
+                                    PRODUCTS
+                                </span>
+
+                                <a href="https://stake.silverstonksstaking.com" class="fs-16 mb-3 d-table">Staking</a>
+                                <a href="#" class="fs-16 mb-3 d-table">Shop</a>
+                                <a href="token-sstx.html" class="fs-16 mb-3 d-table">Token</a>
+                                <a href="https://stake.silverstonksstaking.com" class="fs-16 mb-3 d-table">Memberships</a>
+                            </div>
+                            <div class="col mb-md-0 mb-5">
+                                <span class="fs-16 fw-700 txt-color-mint text-uppercase d-table mb-3">
+                                    LEARN
+                                </span>
+
+                                <a href="learn-user-guide.html" class="fs-16 mb-3 d-table">User Guide</a>
+                                <a href="learn-faq.html" class="fs-16 mb-3 d-table">FAQ’s</a>
+                                <a href="#" class="fs-16 mb-3 d-table">Blog</a>
+                                <a href="assets/files/White-Paper-Silver-Stonks-EN-3.pdf" target="_blank" class="fs-16 mb-3 d-table">White Paper</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-xl-5">
+                        <span class="fs-16 fw-700 txt-color-mint text-uppercase d-table mb-4">
+                            SUBSCRIBE TO OUR NEWSLETTER
+                        </span>
+                        <form class = 'c-form-email-capture--bottom'>
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <label for="" class="form-label">Follow our newsletter to stay updated about the latest news.</label>
+                                </div>
+                                <div class="col-sm-8 mb-3 mb-md-0">
+                                    <input type="text" class="form-control" placeholder="Enter Email" name = 'email'>
+                                </div>
+                                <div class="col-sm-4 mb-3 mb-md-0">
+                                    <button class="btn btn-outline-cta" type = 'submit'>SUBMIT</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="row pt-4 mt-4 border-top-mint-1">
+                    <div class="col-md-6 mb-md-0 mb-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                        <a href="index.html"><img src="assets/img/logo-dark.svg" alt=""></a>
+                    </div>
+
+                    <div class="col-md-6 mb-md-0 mb-4 d-flex align-items-center justify-content-center justify-content-md-end">
+                        <a href="https://www.twitch.tv/silverstonksofficial" target="_blank" class="mr-3">
+                            <i class="fab fa-twitch fa-lg"></i>
+                        </a>
+                        <a href="https://www.facebook.com/silverstonks/" target="_blank" class="mr-3">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="https://twitter.com/SilverStonks" target="_blank" class="mr-3">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/SilverStonks" target="_blank" class="mr-3">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/silverstonks/" target="_blank" class="mr-3">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/silverstonkers/" target="_blank" class="mr-3">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://www.reddit.com/r/SilverStonks/" target="_blank" class="mr-3">
+                            <i class="fab fa-reddit-alien fa-lg"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@silverstonks" target="_blank" class="mr-3">
+                            <i class="fab fa-tiktok fa-lg"></i>
+                        </a>
+                        <a href="https://t.me/SilverStonksEN" target="_blank" class="mr-3">
+                            <i class="fab fa-telegram-plane fa-lg"></i>
+                        </a>
+                        <a href="https://discord.gg/6q9hQcmYq5" target="_blank" class="mr-3">
+                            <i class="fab fa-discord fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-color-black">
+            <div class="container-xl py-4">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 txt-color-white text-center text-md-left">
+                        © 2021 Silver Stonks. All Rights Reserved.
+                    </div>
+                    <div class="col-md-4 text-center txt-color-white">
+                        <a href="privacy.html" class="txt-color-white ">Privacy Policy</a><span class="px-3">|</span>
+                        <a href="terms.html" class="txt-color-white ">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade buy-modal" id="buySSTX" tabindex="-1" aria-labelledby="buySSTXLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--h5 class="modal-title" id="buySSTXLabel">Modal title</h5-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center" style="height:600px;">
+                        <iframe src="https://www.flooz.trade/embedded/0x5396734569e26101677eb39c89413f7fa7d8006f/?refId=jegOR0" height="600px" width="400px" title="Flooz Trade" frameborder="0" allow="clipboard-read; clipboard-write;"></iframe>
+                    </div>
+                    <div class="buy-foot">
+                        <h1 class="fs-26 txt-color-mint fw-600">Need help buying?</h1>
+                        <p class="txt-color-white">For more information, read our complete guide on <a class="txt-color-white fw-700" href="getting-started.html"> Getting Started</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Email Capture -->
+    <div class="modal fade email-capture-modal" id="emailCapture" tabindex="-1" aria-labelledby="emailCapture" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--h5 class="modal-title" id="emailCapture">Modal title</h5-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body px-5 text-center">
+                    <img src="assets/img/logo-2.svg" class="img-fluid" />
+                    <h1 class="fw-600">Enter and Win 500,000 SSTX!</h1>
+                    <h4 class="txt-color-mint mb-5">Winners are announced at the end of every month.</h4>
+                    <form class="mx-0 mx-md-4" id="c-form-raffle-capture--modal">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <input name="email" type="text" class="form-control custom-form" placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col ">
+                                <button class="btn btn-outline-cta text-uppercase" type="submit">Enter To Win</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <p class="fs-16">To own Silver Stonks, you’ll need a crypto wallet. For more information, read our complete guide on <a class="txt-color-black fw-700" href="getting-started.html"> Getting Started</a>.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particle.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper( ".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints:{
+                320:{
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                640:{
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768:{
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                }
+            }
+        } );
+    </script>
+
+    <script>
+        $(window).on('load', function(){
+            AOS.init({
+                once: 'true'
+            });
+
+        });
+    </script>
+
+    <!-- Load Moda -->
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#emailCapture').modal('show');
+        });
+    </script>
+
+    <!-- added -->
+    <!-- notification -->
+    <link rel="stylesheet" href="./dev/notification/tata.css">
+    <script src = './dev/notification/tata.js'></script>
+    <script src = './dev/notification/tataType.js'></script>
+
+    <script src = './dev/process.js'></script>
+    <!-- end of added -->
+
+</html>
